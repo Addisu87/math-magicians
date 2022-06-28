@@ -1,3 +1,5 @@
+/* eslint-disable react/prefer-stateless-function */
+/* eslint-disable no-useless-constructor */
 import React from 'react';
 import './Calculator.css';
 import OutputScreen from './OutputScreen';
@@ -12,38 +14,38 @@ class Calculator extends React.Component {
     return (
       <div className="container">
         <OutputScreen />
-        <div className="rowBtn">
-          <Button variant="contained" label="AC" />
-          <Button variant="contained" label="+/-" />
-          <Button variant="contained" label="%" />
-          <Button variant="contained" label="+" />
+        <div className="rowBtn normal">
+          <Button type="button" label="AC" />
+          <Button type="button" label="+/-" />
+          <Button type="button" label="%" />
+          <Button type="operator" label="+" />
         </div>
 
-        <div className="rowBtn">
-          <Button variant="contained" label="7" />
-          <Button variant="contained" label="8" />
-          <Button variant="contained" label="9" />
-          <Button variant="contained" label="x" />
+        <div className="rowBtn normal">
+          <Button type="button" label="7" />
+          <Button type="button" label="8" />
+          <Button type="button" label="9" />
+          <Button type="operator" label="x" />
         </div>
 
-        <div className="rowBtn">
-          <Button variant="contained" label="4" />
-          <Button variant="contained" label="5" />
-          <Button variant="contained" label="6" />
-          <Button variant="contained" label="-" />
+        <div className="rowBtn normal">
+          <Button type="button" label="4" />
+          <Button type="button" label="5" />
+          <Button type="button" label="6" />
+          <Button type="operator" label="-" />
         </div>
 
-        <div className="rowBtn">
-          <Button variant="contained" label="1" />
-          <Button variant="contained" label="2" />
-          <Button variant="contained" label="3" />
-          <Button variant="contained" label="+" />
+        <div className="rowBtn normal">
+          <Button type="button" label="1" />
+          <Button type="button" label="2" />
+          <Button type="button" label="3" />
+          <Button type="operator" label="+" />
         </div>
 
-        <div className="rowBtn">
-          <Button variant="contained" label="0" />
-          <Button variant="contained" label="." />
-          <Button variant="contained" label="=" />
+        <div className="rowBtn double">
+          <Button type="button" label="0" />
+          <Button type="button" label="." />
+          <Button type="operator" label="=" />
         </div>
       </div>
     );

@@ -11,10 +11,25 @@
 }
 
 .container {
-  box-sizing: border-box;
+  background-color: #fff;
+  height: auto;
   margin: 0;
-  padding: 0;
-  border-radius: 0;
+  max-width: 480px;
+  padding: 10px;
+  width: 100%;
+}
+
+.rowBtn {
+  width: 400px;
+  display: grid;
+}
+
+.normal {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.double {
+  grid-template-columns: 2fr 1fr 1fr;
 }
 
 .screen-row input {
@@ -27,14 +42,13 @@
 }
 
 input[type='button'] {
-  width: 100px;
   background: rgb(235, 230, 230);
   border: 1px solid #222;
   color: black;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
+  display: inline-block;
 }
 
 input[type='button']:active {

@@ -1,10 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = (props) => <input type="button" value={props.label} />;
+const Button = ({ label }) => (
+  <div>
+    <input type="button" value={label} />
+  </div>
+);
 
 Button.propTypes = {
-  label: PropTypes.string.isRequired
+  label: PropTypes.string.isRequired,
 };
 
 export default Button;
