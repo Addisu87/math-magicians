@@ -1,7 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
 /* eslint-disable no-useless-constructor */
 import React from 'react';
-import './Calculator.css';
 import OutputScreen from './OutputScreen';
 import Button from './Button';
 
