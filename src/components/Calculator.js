@@ -14,6 +14,7 @@ class Calculator extends React.Component {
     return (
       <div className="container">
         <OutputScreen />
+
         <div className="rowBtn normal">
           <Button type="button" label="AC" />
           <Button type="button" label="+/-" />

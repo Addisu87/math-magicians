@@ -13,7 +13,7 @@
 .container {
   background-color: #fff;
   height: auto;
-  margin: 0;
+  margin: 20px;
   max-width: 480px;
   padding: 10px;
   width: 100%;
@@ -33,24 +33,31 @@
 }
 
 .screen-row input {
-  width: 400px;
-  background-color: grey;
+  max-width: 480px;
+  background-color: rgb(120, 116, 116);
   border: 0;
-  color: #222;
+  color: rgb(146, 143, 143);
   padding: 10px;
   text-align: right;
 }
 
 input[type='button'] {
+  width: 100%;
   background: rgb(235, 230, 230);
-  border: 1px solid #222;
+  border: 1px solid rgb(218, 214, 214);
   color: black;
   text-align: center;
+  display: inline-block;
   text-decoration: none;
   font-size: 16px;
-  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 input[type='button']:active {
   background: rgb(120, 80, 80);
+}
+
+input.btn-operator {
+  background-color: #eb8537;
 }
