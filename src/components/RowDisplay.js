@@ -14,7 +14,7 @@ class RowDisplay extends PureComponent {
     const { next, total, operation } = this.state;
     return (
       <div className="screen-row">
-        <span>{next || total || operation || '0'}</span>
+        <span>{next || total || operation}</span>
       </div>
     );
   }

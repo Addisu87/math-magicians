@@ -8,21 +8,19 @@ import calculate from '../logic/calculate';
 class Calculator extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = { total: null, next: null, operation: null };
+    this.state = { next: '', total: null, operation: '' };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick = (e) => {
-    this.setState((state) =>
-      calculate(
-        {
-          total: state.total,
-          next: state.next,
-          operation: state.operation
-        },
-        e.target.innerHTML
-      )
-    );
+    this.setState((state) => calculate(
+      {
+        next: state.next,
+        total: state.total,
+        operation: state.operation,
+      },
+      e.target.innerHTML,
+    ));
   };
 
   render() {
