@@ -1,10 +1,10 @@
 /* eslint-disable react/prefer-stateless-function */
 /* eslint-disable no-useless-constructor */
-import React from 'react';
-import OutputScreen from './OutputScreen';
+import React, { PureComponent } from 'react';
 import Button from './Button';
+import RowDisplay from './RowDisplay';
 
-class Calculator extends React.Component {
+class Calculator extends PureComponent {
   constructor(props) {
     super(props);
   }
@@ -12,7 +12,7 @@ class Calculator extends React.Component {
   render() {
     return (
       <div className="container">
-        <OutputScreen />
+        <RowDisplay />
 
         <div className="rowBtn normal">
           <Button type="button" label="AC" />

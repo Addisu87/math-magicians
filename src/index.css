@@ -1,32 +1,38 @@
 :root {
   --screen-color: #858693;
   --dark: #000;
-  --white: #fff;
+  --light: rgb(235, 230, 230);
+  --bg-color: #fff;
   --operator-color: #eb8537;
+  --border-color: rgb(218, 214, 214);
+  --input-active: rgb(120, 80, 80);
 }
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   border-radius: 0;
 }
 
-#root {
+body {
   text-align: center;
 }
 
 .container {
-  background-color: #fff;
+  background-color: var(--bg-color);
   height: auto;
   margin: 40px;
-  max-width: 480px;
   padding: 10px;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .rowBtn {
-  width: 400px;
+  width: 50%;
   display: grid;
 }
 
@@ -38,23 +44,22 @@
   grid-template-columns: 2fr 1fr 1fr;
 }
 
-.screen-row input {
-  max-width: 480px;
-  background-color: var(--screen-color);
-  border: 0;
-  color: rgb(146, 143, 143);
-  padding: 10px;
-  text-align: right;
+.screen-row span {
+  width: 50%;
   display: flex;
   justify-content: flex-end;
-  font-size: 2.28rem;
-  height: 76px;
+  background-color: var(--screen-color);
+  border: 0;
+  color: rgb(247, 240, 240);
+  padding: 10px;
+  font-size: 1.5rem;
+  height: 50px;
 }
 
 input[type='button'] {
   width: 100%;
-  background: rgb(235, 230, 230);
-  border: 1px solid rgb(218, 214, 214);
+  background: var(--light);
+  border: 1px solid var(--border-color);
   color: var(--dark);
   text-align: center;
   display: inline-block;
@@ -65,7 +70,7 @@ input[type='button'] {
 }
 
 input[type='button']:active {
-  background: rgb(120, 80, 80);
+  background: var(--input-active);
 }
 
 input.btn-operator {
