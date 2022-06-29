@@ -13,20 +13,23 @@ class Calculator extends PureComponent {
   }
 
   handleClick = (e) => {
-    this.setState((state) => calculate(
-      {
-        total: state.total,
-        next: state.next,
-        operation: state.operation,
-      },
-      e.target.innerHTML,
-    ));
+    this.setState((state) =>
+      calculate(
+        {
+          total: state.total,
+          next: state.next,
+          operation: state.operation
+        },
+        e.target.innerHTML
+      )
+    );
   };
 
   render() {
+    const { next, total, operation } = this.state;
     return (
       <div className="container">
-        <RowDisplay />
+        <RowDisplay next={next} total={total} operation={operation} />
 
         <div className="rowBtn normal">
           <Button type="button" label="AC" onClick={this.handleClick} />
