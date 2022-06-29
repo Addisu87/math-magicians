@@ -3,11 +3,25 @@
 import React, { PureComponent } from 'react';
 import Button from './Button';
 import RowDisplay from './RowDisplay';
+import calculate from '../logic/calculate';
 
 class Calculator extends PureComponent {
   constructor(props) {
     super(props);
+    this.state = { total: null, next: null, operation: null };
+    this.handleClick = this.handleClick.bind(this);
   }
+
+  handleClick = (e) => {
+    this.setState((state) => calculate(
+      {
+        total: state.total,
+        next: state.next,
+        operation: state.operation,
+      },
+      e.target.innerHTML,
+    ));
+  };
 
   render() {
     return (
@@ -15,37 +29,37 @@ class Calculator extends PureComponent {
         <RowDisplay />
 
         <div className="rowBtn normal">
-          <Button type="button" label="AC" />
-          <Button type="button" label="+/-" />
-          <Button type="button" label="%" />
-          <Button type="operator" label="+" />
+          <Button type="button" label="AC" onClick={this.handleClick} />
+          <Button type="button" label="+/-" onClick={this.handleClick} />
+          <Button type="button" label="%" onClick={this.handleClick} />
+          <Button type="operator" label="+" onClick={this.handleClick} />
         </div>
 
         <div className="rowBtn normal">
-          <Button type="button" label="7" />
-          <Button type="button" label="8" />
-          <Button type="button" label="9" />
-          <Button type="operator" label="x" />
+          <Button type="button" label="7" onClick={this.handleClick} />
+          <Button type="button" label="8" onClick={this.handleClick} />
+          <Button type="button" label="9" onClick={this.handleClick} />
+          <Button type="operator" label="x" onClick={this.handleClick} />
         </div>
 
         <div className="rowBtn normal">
-          <Button type="button" label="4" />
-          <Button type="button" label="5" />
-          <Button type="button" label="6" />
-          <Button type="operator" label="-" />
+          <Button type="button" label="4" onClick={this.handleClick} />
+          <Button type="button" label="5" onClick={this.handleClick} />
+          <Button type="button" label="6" onClick={this.handleClick} />
+          <Button type="operator" label="-" onClick={this.handleClick} />
         </div>
 
         <div className="rowBtn normal">
-          <Button type="button" label="1" />
-          <Button type="button" label="2" />
-          <Button type="button" label="3" />
-          <Button type="operator" label="+" />
+          <Button type="button" label="1" onClick={this.handleClick} />
+          <Button type="button" label="2" onClick={this.handleClick} />
+          <Button type="button" label="3" onClick={this.handleClick} />
+          <Button type="operator" label="+" onClick={this.handleClick} />
         </div>
 
         <div className="rowBtn double">
-          <Button type="button" label="0" />
-          <Button type="button" label="." />
-          <Button type="operator" label="=" />
+          <Button type="button" label="0" onClick={this.handleClick} />
+          <Button type="button" label="." onClick={this.handleClick} />
+          <Button type="operator" label="=" onClick={this.handleClick} />
         </div>
       </div>
     );

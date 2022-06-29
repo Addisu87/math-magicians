@@ -4,15 +4,17 @@ class RowDisplay extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      display: '0',
+      next: '',
+      total: null,
+      operation: '',
     };
   }
 
   render() {
-    const { display } = this.state;
+    const { next, total, operation } = this.state;
     return (
       <div className="screen-row">
-        <span>{display}</span>
+        <span>{next || total || operation || '0'}</span>
       </div>
     );
   }

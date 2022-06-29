@@ -1,6 +1,6 @@
 # Math-magicians
 
-In this math_magicians project I have implemented a single-page web application that displays message, quote and calculator app.
+In this math_magicians project, I have implemented a single-page web application that displays message, quote and calculator app.
 
 ## Built With
 
@@ -8,7 +8,6 @@ In this math_magicians project I have implemented a single-page web application 
 - CSS
 - Javascript
 - Git & Github
-- WebPack
 - React
 
 ## Live Demo
@@ -23,7 +22,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Modern web browser with Javascript enabled
 
-- Run: `Git Clone + 'git@github.com:Addisu87/math-calculator.git'`
+- Run: `Git Clone + 'git@github.com:Addisu87/math-magicians.git'`
 
 ## Authors
 
@@ -37,7 +36,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Addisu87/math-calculator/issues).
+Feel free to check the [issues page](https://github.com/Addisu87/math-magicians/issues).
 
 ## Show your support
 
