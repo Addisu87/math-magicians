@@ -1,5 +1,3 @@
-// /* eslint-disable react/prefer-stateless-function */
-// /* eslint-disable no-useless-constructor */
 import React, { useState } from 'react';
 import Button from './Button';
 import RowDisplay from './RowDisplay';
@@ -9,17 +7,19 @@ const Calculator = () => {
   const [state, setState] = useState({
     next: null,
     total: null,
-    operation: null,
+    operation: null
   });
   const handleClick = (e) => {
-    setState((state) => calculate(
-      {
-        next: state.next,
-        total: state.total,
-        operation: state.operation,
-      },
-      e.target.value,
-    ));
+    setState((state) =>
+      calculate(
+        {
+          next: state.next,
+          total: state.total,
+          operation: state.operation
+        },
+        e.target.value
+      )
+    );
   };
 
   const { next, total, operation } = state;
