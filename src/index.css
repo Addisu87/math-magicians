@@ -18,21 +18,21 @@
 }
 
 body {
-  text-align: center;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
   background-color: var(--bg-color);
   height: auto;
-  margin: 40px;
   padding: 10px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  width: 50%;
 }
 
 .rowBtn {
-  width: 50%;
+  width: 100%;
   display: grid;
 }
 
@@ -45,29 +45,31 @@ body {
 }
 
 .screen-row span {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   background-color: var(--screen-color);
   color: rgb(247, 240, 240);
   padding: 10px;
-  font-size: 1.5rem;
-  height: 50px;
+  font-size: 1.75rem;
+  height: 70px;
   border: 2px solid var(--border-color);
+  border-radius: 25px;
+  align-items: center;
 }
 
 input[type='button'] {
   width: 100%;
-  background: var(--light);
+  background-color: var(--light);
   border: 2px solid var(--border-color);
   color: var(--dark);
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
-  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  flex: 1;
   padding: 10px 20px;
-  cursor: pointer;
-  margin: 3px;
+  margin: 2px 4px;
   border-radius: 25px;
 }
 
