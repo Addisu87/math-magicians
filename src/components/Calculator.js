@@ -31,7 +31,7 @@ const Calculator = () => {
         <Button type="button" label="AC" onClick={handleClick} />
         <Button type="button" label="+/-" onClick={handleClick} />
         <Button type="button" label="%" onClick={handleClick} />
-        <Button type="operator" label="+" onClick={handleClick} />
+        <Button type="operator" label="÷" onClick={handleClick} />
       </div>
 
       <div className="rowBtn normal">
