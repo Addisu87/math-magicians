@@ -1,22 +1,16 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-class RowDisplay extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-      next: '',
-      total: null,
-      operation: '',
-    };
-  }
+const RowDisplay = ({ next = '', total = null, operation = '' }) => (
+  <div className="screen-row">
+    <span>{next || total || operation || '0'}</span>
+  </div>
+);
 
-  render() {
-    const { next, total, operation } = this.state;
-    return (
-      <div className="screen-row">
-        <span>{next || total || operation}</span>
-      </div>
-    );
-  }
-}
+RowDisplay.propTypes = {
+  next: PropTypes.string.isRequired,
+  total: PropTypes.string.isRequired,
+  operation: PropTypes.string.isRequired,
+};
+
 export default RowDisplay;
