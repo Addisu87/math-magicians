@@ -6,7 +6,9 @@ function Quotes() {
     <Main>
       <QouteList>
         <li>
-          <q>Pure mathematics is, in its way, the poetry of logical ideas.</q> -
+          <q>Pure mathematics is, in its way, the poetry of logical ideas.</q>
+          {' '}
+          -
           Albert Einstein
         </li>
         <li>
