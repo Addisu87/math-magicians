@@ -2,9 +2,9 @@
   --screen-color: #858693;
   --dark: #000;
   --light: rgb(235, 230, 230);
-  --bg-color: #fff;
+  --bg-color: rgb(69, 62, 62);
   --operator-color: #eb8537;
-  --border-color: rgb(218, 214, 214);
+  --border-color: rgb(74, 69, 69);
   --input-active: rgb(120, 80, 80);
 }
 
@@ -60,9 +60,8 @@ body {
 
 input[type='button'] {
   width: 100%;
-  background-color: var(--light);
+  background-color: var(--dark);
   border: 2px solid var(--border-color);
-  color: var(--dark);
   display: flex;
   justify-content: center;
   align-items: center;

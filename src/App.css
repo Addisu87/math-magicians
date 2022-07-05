@@ -5,8 +5,7 @@
 }
 
 * {
-  --dark: rgb(42, 40, 40);
-  --light: #fff;
+  --dark: rgb(235, 229, 229);
 }
 
 .App {

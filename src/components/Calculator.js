@@ -1,35 +1,28 @@
 import React, { useState } from 'react';
-import Button from './Button';
 import RowDisplay from './RowDisplay';
 import calculate from '../logic/calculate';
-import { Link } from 'react-router-dom';
+import Button from './Button';
 
-const Calculator = () => {
+function Calculator() {
   const [state, setState] = useState({
     next: null,
     total: null,
-    operation: null
+    operation: null,
   });
   const handleClick = (e) => {
-    setState((state) =>
-      calculate(
-        {
-          next: state.next,
-          total: state.total,
-          operation: state.operation
-        },
-        e.target.value
-      )
-    );
+    setState((state) => calculate(
+      {
+        next: state.next,
+        total: state.total,
+        operation: state.operation,
+      },
+      e.target.value,
+    ));
   };
 
   const { next, total, operation } = state;
   return (
     <div className="container">
-      <nav>
-        <Link to="/calculator">Calculator</Link>
-      </nav>
-
       <RowDisplay next={next} total={total} operation={operation} />
 
       <div className="rowBtn normal">
@@ -67,6 +60,6 @@ const Calculator = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Calculator;
