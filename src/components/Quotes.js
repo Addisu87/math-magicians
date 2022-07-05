@@ -45,6 +45,7 @@ const Main = styled.div`
   font-size: 1rem;
   align-center: center;
   width: 80%;
+  padding: 1rem;
 `;
 
 const QouteList = styled.ul`

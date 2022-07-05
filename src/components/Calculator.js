@@ -11,14 +11,16 @@ function Calculator() {
     operation: null,
   });
   const handleClick = (e) => {
-    setState((state) => calculate(
-      {
-        next: state.next,
-        total: state.total,
-        operation: state.operation,
-      },
-      e.target.value,
-    ));
+    setState((state) => {
+      calculate(
+        {
+          next: state.next,
+          total: state.total,
+          operation: state.operation,
+        },
+        e.target.value,
+      );
+    });
   };
 
   const { next, total, operation } = state;
@@ -71,14 +73,15 @@ export default Calculator;
 
 const Wrapper = styled.div`
   display: flex;
-  & .doMath {
-    flex: 1;
-  }
+  justify-content: space-between;
+  padding: 1rem;
+  width: 80%;
+  margin: 0 auto;
 `;
 
 const CalcContainer = styled.div`
   background-color: var(--bg-color);
-  height: 70vh;
-  padding: 10px;
-  width: 70%;
+  height: 68vh;
+  width: 50%;
+  padding: 0.5rem;
 `;

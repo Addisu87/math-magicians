@@ -22,7 +22,7 @@ const NavBar = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  padding: 0 32px;
+  padding: 0 1rem;
   margin: 0 auto;
   width: 80%;
 `;
@@ -32,7 +32,7 @@ const Title = styled.h2`
   font-weight: 700;
   line-height: 20px;
   text-decoration: none;
-  color: palevioletred;
+  color: #000;
   display: flex;
 `;
 
@@ -40,6 +40,6 @@ const Nav = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
-  margin: 0 auto;
+  color: #000;
+  margin-right: 10px;
 `;

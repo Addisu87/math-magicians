@@ -4,7 +4,7 @@ import styled from 'styled-components';
 function Home() {
   return (
     <HomeContainer>
-      <h4>Welcome to our page!</h4>
+      <HomeTitle>Welcome to our page!</HomeTitle>
       <p>
         Emmet Abbreviation Lorem, ipsum dolor sit amet consectetur adipisicing
         elit. Praesentium facere numquam nobis minus ipsam quaerat doloremque
@@ -27,14 +27,20 @@ export default Home;
 const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  & h4 {
-    font-weight: 700;
-  }
+  width: 77%;
 
   & p {
-    width: 70%;
+    width: 100%;
     font-weight: lighter;
+    justify-content: center;
+    align-items: center;
   }
+`;
+
+const HomeTitle = styled.h4`
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  text-align: flex-start;
 `;
