@@ -24,13 +24,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
-  background-color: var(--bg-color);
-  height: auto;
-  padding: 10px;
-  width: 50%;
-}
-
 .rowBtn {
   width: 100%;
   display: grid;

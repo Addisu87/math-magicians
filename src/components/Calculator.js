@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 import RowDisplay from './RowDisplay';
 import calculate from '../logic/calculate';
 import Button from './Button';
@@ -22,44 +23,63 @@ function Calculator() {
 
   const { next, total, operation } = state;
   return (
-    <div className="container">
-      <RowDisplay next={next} total={total} operation={operation} />
+    <Wrapper>
+      <h4 className="doMath">Let&apos;s do some math!</h4>
 
-      <div className="rowBtn normal">
-        <Button type="button" label="AC" onClick={handleClick} />
-        <Button type="button" label="+/-" onClick={handleClick} />
-        <Button type="button" label="%" onClick={handleClick} />
-        <Button type="operator" label="÷" onClick={handleClick} />
-      </div>
+      <CalcContainer>
+        <RowDisplay next={next} total={total} operation={operation} />
 
-      <div className="rowBtn normal">
-        <Button type="button" label="7" onClick={handleClick} />
-        <Button type="button" label="8" onClick={handleClick} />
-        <Button type="button" label="9" onClick={handleClick} />
-        <Button type="operator" label="x" onClick={handleClick} />
-      </div>
+        <div className="rowBtn normal">
+          <Button type="button" label="AC" onClick={handleClick} />
+          <Button type="button" label="+/-" onClick={handleClick} />
+          <Button type="button" label="%" onClick={handleClick} />
+          <Button type="operator" label="÷" onClick={handleClick} />
+        </div>
 
-      <div className="rowBtn normal">
-        <Button type="button" label="4" onClick={handleClick} />
-        <Button type="button" label="5" onClick={handleClick} />
-        <Button type="button" label="6" onClick={handleClick} />
-        <Button type="operator" label="-" onClick={handleClick} />
-      </div>
+        <div className="rowBtn normal">
+          <Button type="button" label="7" onClick={handleClick} />
+          <Button type="button" label="8" onClick={handleClick} />
+          <Button type="button" label="9" onClick={handleClick} />
+          <Button type="operator" label="x" onClick={handleClick} />
+        </div>
 
-      <div className="rowBtn normal">
-        <Button type="button" label="1" onClick={handleClick} />
-        <Button type="button" label="2" onClick={handleClick} />
-        <Button type="button" label="3" onClick={handleClick} />
-        <Button type="operator" label="+" onClick={handleClick} />
-      </div>
+        <div className="rowBtn normal">
+          <Button type="button" label="4" onClick={handleClick} />
+          <Button type="button" label="5" onClick={handleClick} />
+          <Button type="button" label="6" onClick={handleClick} />
+          <Button type="operator" label="-" onClick={handleClick} />
+        </div>
 
-      <div className="rowBtn double">
-        <Button type="button" label="0" onClick={handleClick} />
-        <Button type="button" label="." onClick={handleClick} />
-        <Button type="operator" label="=" onClick={handleClick} />
-      </div>
-    </div>
+        <div className="rowBtn normal">
+          <Button type="button" label="1" onClick={handleClick} />
+          <Button type="button" label="2" onClick={handleClick} />
+          <Button type="button" label="3" onClick={handleClick} />
+          <Button type="operator" label="+" onClick={handleClick} />
+        </div>
+
+        <div className="rowBtn double">
+          <Button type="button" label="0" onClick={handleClick} />
+          <Button type="button" label="." onClick={handleClick} />
+          <Button type="operator" label="=" onClick={handleClick} />
+        </div>
+      </CalcContainer>
+    </Wrapper>
   );
 }
 
 export default Calculator;
+
+const Wrapper = styled.div`
+  display: flex;
+  height: 80vh;
+  & .doMath {
+    flex: 1;
+  }
+`;
+
+const CalcContainer = styled.div`
+  background-color: var(--bg-color);
+  height: 70vh;
+  padding: 10px;
+  width: 70%;
+`;

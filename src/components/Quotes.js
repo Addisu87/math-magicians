@@ -1,12 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
 
 function Quotes() {
   return (
-    <main>
-      <div>
-        <h2>Math Magicians</h2>
-      </div>
-      <ul>
+    <Main>
+      <QouteList>
         <li>
           <q>Pure mathematics is, in its way, the poetry of logical ideas.</q>
           {' '}
@@ -33,9 +31,22 @@ function Quotes() {
           </q>
           — Dean Schlicter
         </li>
-      </ul>
-    </main>
+      </QouteList>
+    </Main>
   );
 }
 
 export default Quotes;
+
+const Main = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 77vh;
+  margin: 10px 0;
+`;
+
+const QouteList = styled.ul`
+  list-style-type: none;
+`;
