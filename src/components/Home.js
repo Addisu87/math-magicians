@@ -11,7 +11,7 @@ function Home() {
         aliquam suscipit vero, vitae dolorem ab laboriosam laudantium voluptatum
         magni libero iusto error eos?
       </p>
-
+      <br />
       <p>
         Emmet Abbreviation Lorem, ipsum dolor sit amet consectetur adipisicing
         elit. Praesentium facere numquam nobis minus ipsam quaerat doloremque
@@ -29,7 +29,6 @@ const HomeContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
   & h4 {
     font-weight: 700;
   }

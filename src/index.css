@@ -53,7 +53,7 @@ body {
 
 input[type='button'] {
   width: 100%;
-  background-color: var(--dark);
+  background-color: var(--light);
   border: 2px solid var(--border-color);
   display: flex;
   justify-content: center;

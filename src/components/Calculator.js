@@ -24,7 +24,7 @@ function Calculator() {
   const { next, total, operation } = state;
   return (
     <Wrapper>
-      <h4 className="doMath">Let&apos;s do some math!</h4>
+      <h5 className="doMath">Let&apos;s do some math!</h5>
 
       <CalcContainer>
         <RowDisplay next={next} total={total} operation={operation} />
@@ -71,7 +71,6 @@ export default Calculator;
 
 const Wrapper = styled.div`
   display: flex;
-  height: 80vh;
   & .doMath {
     flex: 1;
   }

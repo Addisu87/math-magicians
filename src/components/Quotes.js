@@ -6,9 +6,7 @@ function Quotes() {
     <Main>
       <QouteList>
         <li>
-          <q>Pure mathematics is, in its way, the poetry of logical ideas.</q>
-          {' '}
-          -
+          <q>Pure mathematics is, in its way, the poetry of logical ideas.</q> -
           Albert Einstein
         </li>
         <li>
@@ -42,9 +40,9 @@ const Main = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 77vh;
-  margin: 10px 0;
+  font-size: 1rem;
+  align-center: center;
+  width: 80%;
 `;
 
 const QouteList = styled.ul`

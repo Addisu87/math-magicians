@@ -4,36 +4,42 @@ import styled from 'styled-components';
 
 function Navbar() {
   return (
-    <Nav>
+    <NavBar>
       <Title>Math Magicians</Title>
-      <Links>
+      <Nav>
         <Link to="/">Home |</Link>
         <Link to="/calculator">Calculator |</Link>
         <Link to="/quotes">Quotes</Link>
-      </Links>
-    </Nav>
+      </Nav>
+    </NavBar>
   );
 }
 
 export default Navbar;
 
-const Nav = styled.header`
+const NavBar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  padding: 10px 30px;
+  padding: 0 32px;
+  margin: 0 auto;
+  width: 80%;
 `;
 
 const Title = styled.h2`
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   text-decoration: none;
   color: palevioletred;
+  display: flex;
 `;
 
-const Links = styled.div`
+const Nav = styled.div`
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 30px;
+  margin: 0 auto;
 `;

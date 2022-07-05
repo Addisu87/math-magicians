@@ -5,13 +5,12 @@
 }
 
 * {
-  --dark: rgb(235, 229, 229);
+  --light: #fff;
 }
 
 .App {
   width: 100%;
-  height: 100vh;
-  background-color: var(--dark);
+  background-color: var(--light);
   display: flex;
   flex-direction: column;
   align-items: center;
