@@ -55,3 +55,59 @@ exports[`App renders correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`Body of the whole App renders correctly 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="sc-bczRLJ gUDtTg"
+  >
+    <h2
+      className="sc-gsnTZi dayyfU"
+    >
+      Math Magicians
+    </h2>
+    <div
+      className="sc-dkzDqf bxKzAV"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home |
+      </a>
+      <a
+        href="/calculator"
+        onClick={[Function]}
+      >
+        Calculator |
+      </a>
+      <a
+        href="/quotes"
+        onClick={[Function]}
+      >
+        Quotes
+      </a>
+    </div>
+  </div>
+  <div
+    className="sc-hKMtZM buVsdN"
+  >
+    <h4
+      className="sc-eCYdqJ jBlsKL"
+    >
+      Welcome to our page!
+    </h4>
+    <article>
+      <p>
+        Math magicians is a website for all fans of mathematics. It is a Single Page App(SPA) that allow users to make simple calculations and read a random math-related quote.
+      </p>
+      <br />
+      <p>
+        This project was made by Addisu Haile, as part of the React module of Microverse school.
+      </p>
+    </article>
+  </div>
+</div>
+`;
