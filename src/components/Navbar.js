@@ -21,10 +21,12 @@ const NavBar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 50px;
   padding: 0 1rem;
-  margin: 0 auto;
+  margin-bottom: 20px;
   width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 `;
 
 const Title = styled.h2`
@@ -41,5 +43,8 @@ const Nav = styled.div`
   align-items: center;
   justify-content: space-between;
   color: #000;
-  margin-right: 10px;
+  margin-right: 20px;
+  & Link {
+    justify-content: space-evenly;
+  }
 `;

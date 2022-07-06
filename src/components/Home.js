@@ -5,19 +5,21 @@ function Home() {
   return (
     <HomeContainer>
       <HomeTitle>Welcome to our page!</HomeTitle>
-      <p>
-        Emmet Abbreviation Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Praesentium facere numquam nobis minus ipsam quaerat doloremque
-        aliquam suscipit vero, vitae dolorem ab laboriosam laudantium voluptatum
-        magni libero iusto error eos?
-      </p>
-      <br />
-      <p>
-        Emmet Abbreviation Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Praesentium facere numquam nobis minus ipsam quaerat doloremque
-        aliquam suscipit vero, vitae dolorem ab laboriosam laudantium voluptatum
-        magni libero iusto error eos?
-      </p>
+      <article>
+        <p>
+          Emmet Abbreviation Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Praesentium facere numquam nobis minus ipsam quaerat doloremque
+          aliquam suscipit vero, vitae dolorem ab laboriosam laudantium
+          voluptatum magni libero iusto error eos?
+        </p>
+        <br />
+        <p>
+          Emmet Abbreviation Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Praesentium facere numquam nobis minus ipsam quaerat doloremque
+          aliquam suscipit vero, vitae dolorem ab laboriosam laudantium
+          voluptatum magni libero iusto error eos?
+        </p>
+      </article>
     </HomeContainer>
   );
 }
