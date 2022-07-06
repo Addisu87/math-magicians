@@ -1,7 +1,7 @@
 import operate from './__mocks__/operate';
 
 describe('correct result is displayed', () => {
-  test('operator return correct sum', () => {
+  test('add one value to another', () => {
     const result = operate(7, 4, '+');
     expect(result).toEqual('11');
   });
