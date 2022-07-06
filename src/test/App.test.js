@@ -15,21 +15,24 @@ describe('Body of the whole App', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test('Expect it to render the home page', async () => {
-      render(
-        <MemoryRouter>
-          <App />
-        </MemoryRouter>
-      )
-    expect(screen.getByText(/Math magicians is a website for all fans of mathematics./)).not.toBeNull();
-  });
-
-
-  test('Making sure the quote page renders', () => {
+  it('Expect it to render the home page', async () => {
     render(
       <MemoryRouter>
         <App />
-      </MemoryRouter>,
+      </MemoryRouter>
+    );
+    expect(
+      screen.getByText(
+        /Math magicians is a website for all fans of mathematics./
+      )
+    ).not.toBeNull();
+  });
+
+  it('Making sure the quote page renders', () => {
+    render(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>
     );
 
     const quote = screen.getByText('Quotes');
@@ -40,21 +43,22 @@ describe('Body of the whole App', () => {
     expect(speaker).not.toBeNull();
   });
 
+  // it('Activating the calculator function', () => {
+  //   render(
+  //     <MemoryRouter>
+  //       <App />
+  //     </MemoryRouter>
+  //   );
 
-  test('Activating the Calculator function', () => {
-    render(
-      <MemoryRouter>
-        <App />
-      </MemoryRouter>,
-    );
-
-    const calcLink = screen.getByText('Calculator');
-    fireEvent.click(calcLink);
-    const acBtn = screen.getByText('AC');
-    expect(acBtn).not.toBeNull();
-    const prodBtn = screen.getByText('x');
-    expect(prodBtn).not.toBeNull();
-    const equBtn = screen.getByText('=');
-    expect(equBtn).not.toBeNull();
-  });
+  //   const calcLink = screen.getByText('Calculator');
+  //   fireEvent.click(calcLink);
+  //   const acBtn = screen.getByText('AC');
+  //   expect(acBtn).not.toBeNull();
+  //   const prodBtn = screen.getByText('x');
+  //   expect(prodBtn).not.toBeNull();
+  //   const divBtn = screen.getByText('÷');
+  //   expect(divBtn).not.toBeNull();
+  //   const equBtn = screen.getByText('=');
+  //   expect(equBtn).not.toBeNull();
+  // });
 });
