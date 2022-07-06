@@ -18,7 +18,7 @@ export default function calculate(obj, buttonName) {
     return {
       total: null,
       next: null,
-      operation: null
+      operation: null,
     };
   }
 
@@ -37,12 +37,12 @@ export default function calculate(obj, buttonName) {
     if (obj.next && obj.next !== '0') {
       return {
         next: obj.next + buttonName,
-        total: null
+        total: null,
       };
     }
     return {
       next: buttonName,
-      total: null
+      total: null,
     };
   }
 
@@ -70,7 +70,7 @@ export default function calculate(obj, buttonName) {
       return {
         total: operate(obj.total, obj.next, obj.operation),
         next: null,
-        operation: null
+        operation: null,
       };
     }
     // '=' with no operation, nothing to do
@@ -113,7 +113,7 @@ export default function calculate(obj, buttonName) {
     return {
       total: operate(obj.total, obj.next, obj.operation),
       next: null,
-      operation: buttonName
+      operation: buttonName,
     };
   }
 
@@ -128,6 +128,6 @@ export default function calculate(obj, buttonName) {
   return {
     total: obj.next,
     next: null,
-    operation: buttonName
+    operation: buttonName,
   };
 }
