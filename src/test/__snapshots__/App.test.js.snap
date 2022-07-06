@@ -45,11 +45,11 @@ exports[`App renders correctly 1`] = `
     </h4>
     <article>
       <p>
-        Emmet Abbreviation Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium facere numquam nobis minus ipsam quaerat doloremque aliquam suscipit vero, vitae dolorem ab laboriosam laudantium voluptatum magni libero iusto error eos?
+        Math magicians is a website for all fans of mathematics. It is a Single Page App(SPA) that allow users to make simple calculations and read a random math-related quote.
       </p>
       <br />
       <p>
-        Emmet Abbreviation Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium facere numquam nobis minus ipsam quaerat doloremque aliquam suscipit vero, vitae dolorem ab laboriosam laudantium voluptatum magni libero iusto error eos?
+        This project was made by Addisu Haile, as part of the React module of Microverse school.
       </p>
     </article>
   </div>

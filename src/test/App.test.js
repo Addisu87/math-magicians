@@ -9,15 +9,9 @@ describe('App', () => {
       .create(
         <MemoryRouter>
           <App />
-        </MemoryRouter>,
+        </MemoryRouter>
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
-});
-
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/calculator/i);
-  expect(linkElement).toBeInTheDocument();
 });
