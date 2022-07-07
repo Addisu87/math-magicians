@@ -8,7 +8,7 @@ function Calculator() {
   const [state, setState] = useState({
     next: null,
     total: null,
-    operation: null
+    operation: null,
   });
 
   const handleClick = (e) => {
@@ -17,9 +17,9 @@ function Calculator() {
         {
           next: state.next,
           total: state.total,
-          operation: state.operation
+          operation: state.operation,
         },
-        e.target.value
+        e.target.value,
       );
     });
   };

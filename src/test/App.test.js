@@ -2,7 +2,6 @@ import renderer from 'react-test-renderer';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import App from '../App';
-import RowDisplay from '../components/RowDisplay';
 
 describe('Body of the whole App', () => {
   it('renders correctly', () => {
@@ -10,7 +9,7 @@ describe('Body of the whole App', () => {
       .create(
         <MemoryRouter>
           <App />
-        </MemoryRouter>
+        </MemoryRouter>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
@@ -20,12 +19,12 @@ describe('Body of the whole App', () => {
     render(
       <MemoryRouter>
         <App />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     expect(
       screen.getByText(
-        /Math magicians is a website for all fans of mathematics./
-      )
+        /Math magicians is a website for all fans of mathematics./,
+      ),
     ).not.toBeNull();
   });
 
@@ -33,7 +32,7 @@ describe('Body of the whole App', () => {
     render(
       <MemoryRouter>
         <App />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const quote = screen.getByText('Quotes');

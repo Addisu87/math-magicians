@@ -8,7 +8,7 @@ describe('Navigation bar', () => {
       .create(
         <MemoryRouter>
           <Navbar />
-        </MemoryRouter>
+        </MemoryRouter>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
