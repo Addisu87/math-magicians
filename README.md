@@ -12,7 +12,8 @@ In this math_magicians project, I have implemented a single-page web application
 
 ## Live Demo
 
-- Check the live demo of my page [here]
+- Check the live demo of my page [-https://add-math-magicians.netlify.app/ and 
+-  https://peaceful-reef-92418.herokuapp.com/ ]
 
 ## Getting Started
 
