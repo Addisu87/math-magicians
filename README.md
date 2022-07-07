@@ -24,6 +24,10 @@ To get a local copy up and running follow these simple example steps.
 
 - Run: `Git Clone + 'git@github.com:Addisu87/math-magicians.git'`
 
+### Setup
+- npm install 
+- npm start 
+
 ## Authors
 
 👤 **Addisu Haile**

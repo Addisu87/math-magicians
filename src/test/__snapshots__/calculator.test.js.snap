@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render without problems should render the calculator 1`] = `
+<div
+  className="sc-bczRLJ bptONv"
+>
+  <h5
+    className="doMath"
+  >
+    Let's do some math!
+  </h5>
+  <div
+    className="sc-gsnTZi ejTGak"
+  >
+    <div
+      className="screen-row"
+    >
+      <span>
+        0
+      </span>
+    </div>
+    <div
+      className="rowBtn normal"
+    >
+      <input
+        className="btn-button"
+        onClick={[Function]}
+        type="button"
+        value="AC"
+      />
+      <input
+        className="btn-button"
+        onClick={[Function]}
+        type="button"
+        value="+/-"
+      />
+      <input
+        className="btn-button"
+        onClick={[Function]}
+        type="button"
+        value="%"
+      />
+      <input
+        className="btn-operator"
+        onClick={[Function]}
+        type="button"
+        value="÷"
+      />
+    </div>
+    <div
+      className="rowBtn normal"
+    >
+      <input
+        className="btn-button"
+        onClick={[Function]}
+        type="button"
+        value="7"
+      />
+      <input
+        className="btn-button"
+        onClick={[Function]}
+        type="button"
+        value="8"
+      />
+      <input
+        className="btn-button"
+        onClick={[Function]}
+        type="button"
+        value="9"
+      />
+      <input
+        className="btn-operator"
+        onClick={[Function]}
+        type="button"
+        value="x"
+      />
+    </div>
+    <div
+      className="rowBtn normal"
+    >
+      <input
+        className="btn-button"
+        onClick={[Function]}
+        type="button"
+        value="4"
+      />
+      <input
+        className="btn-button"
+        onClick={[Function]}
+        type="button"
+        value="5"
+      />
+      <input
+        className="btn-button"
+        onClick={[Function]}
+        type="button"
+        value="6"
+      />
+      <input
+        className="btn-operator"
+        onClick={[Function]}
+        type="button"
+        value="-"
+      />
+    </div>
+    <div
+      className="rowBtn normal"
+    >
+      <input
+        className="btn-button"
+        onClick={[Function]}
+        type="button"
+        value="1"
+      />
+      <input
+        className="btn-button"
+        onClick={[Function]}
+        type="button"
+        value="2"
+      />
+      <input
+        className="btn-button"
+        onClick={[Function]}
+        type="button"
+        value="3"
+      />
+      <input
+        className="btn-operator"
+        onClick={[Function]}
+        type="button"
+        value="+"
+      />
+    </div>
+    <div
+      className="rowBtn double"
+    >
+      <input
+        className="btn-button"
+        onClick={[Function]}
+        type="button"
+        value="0"
+      />
+      <input
+        className="btn-button"
+        onClick={[Function]}
+        type="button"
+        value="."
+      />
+      <input
+        className="btn-operator"
+        onClick={[Function]}
+        type="button"
+        value="="
+      />
+    </div>
+  </div>
+</div>
+`;
