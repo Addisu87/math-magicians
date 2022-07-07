@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation bar renders correctly 1`] = `
+<input
+  className="btn-undefined"
+  type="button"
+/>
+`;
