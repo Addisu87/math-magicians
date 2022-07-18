@@ -2,8 +2,9 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -5px,
-    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow:
+   rgba(0, 0, 0, 0.1) 0 10px 15px -5px,
+    rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
 }
 
 .title {
