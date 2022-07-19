@@ -2,8 +2,9 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
+  padding: 50px 0;
   box-shadow:
-   rgba(0, 0, 0, 0.1) 0 10px 15px -5px,
+    rgba(0, 0, 0, 0.1) 0 10px 15px -5px,
     rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
 }
 
@@ -20,6 +21,7 @@
 .linkItems {
   list-style: none;
   font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
 .links {

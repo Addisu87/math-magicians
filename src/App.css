@@ -11,6 +11,8 @@ html {
   backdrop-filter: blur(2px);
   background-size: cover;
   color: var(--whitesmoke);
+  width: 100%;
+  height: 100%;
 }
 
 * {

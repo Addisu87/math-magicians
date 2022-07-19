@@ -42,7 +42,7 @@ const Main = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   align-center: center;
   width: 80%;
   padding: 1rem;

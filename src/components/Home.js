@@ -36,6 +36,7 @@ const HomeContainer = styled.div`
     font-weight: lighter;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
   }
 
   @media (min-width: 601px) and (max-width: 1200px) {
