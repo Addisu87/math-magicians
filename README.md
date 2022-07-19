@@ -12,8 +12,8 @@ In this math_magicians project, I have implemented a single-page web application
 
 ## Live Demo
 
-- Check the live demo of my page [-https://add-math-magicians.netlify.app/ and 
--  https://peaceful-reef-92418.herokuapp.com/ ]
+- Check the live demo of my page [https://add-math-magicians.netlify.app/ and
+- https://peaceful-reef-92418.herokuapp.com/ ]
 
 ## Getting Started
 
@@ -26,8 +26,9 @@ To get a local copy up and running follow these simple example steps.
 - Run: `Git Clone + 'git@github.com:Addisu87/math-magicians.git'`
 
 ### Setup
-- npm install 
-- npm start 
+
+- npm install
+- npm start
 
 ## Authors
 
@@ -35,7 +36,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [Addisu87](https://github.com/Addisu87)
 - Twitter: [@AddisuTedla](https://twitter.com/AddisuTedla)
-- LinkedIn: [Addisu Tedla](https://www.linkedin.com/in/addisu-tedla-8b4a10143/)
+- LinkedIn: [Addisu Tedla](www.linkedin.com/in/addisu-tedla/)
 
 ## 🤝 Contributing
 
