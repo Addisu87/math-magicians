@@ -1,6 +1,6 @@
 # Math-magicians
 
-In this math_magicians project, I have implemented a single-page web application that displays message, quote and calculator app.
+I implemented a single-page web application that displays messages, quote,s and a calculator app.
 
 ## Built With
 
